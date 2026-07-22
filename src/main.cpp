@@ -1,5 +1,6 @@
 //Include of the required elements
 #include "Quicksort.hpp"
+#include "Utils.hpp"
 #include <iostream>
 
 int main(){
