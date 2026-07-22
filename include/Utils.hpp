@@ -2,6 +2,7 @@
 #pragma once
 
 //Include of necessary elements
+#include <iostream>
 #include <fstream>
 #include <sstream>
 #include <vector>
@@ -10,21 +11,10 @@
 
 class Utils{
     public:
-    static std::vector<std::pair<std::string, std::string>> fillVector (std::string ubication){
-        std::ifstream archivo(ubication);
-        std::string line;
-        std::vector<std::string> elements;
+    static std::vector<std::pair<std::string, std::string>> fillVector (std::string ubication);
 
-        while(std::getline(archivo, line)) {
-        std::stringstream ss(line);
-        std::string cell;
-        std::vector<std::string> fila;
+    static std::string showMenu();
 
-        while (std::getline(ss, cell, ';')) {
-            fila.push_back(cell);
-        }
-
-        filas.push_back(fila);
-    } 
+    static void showMiniPause();
 };
 
